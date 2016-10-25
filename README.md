@@ -1,6 +1,8 @@
 # HDL Project Template
 --------------------
 
+Version 1.0
+
 A template for test-driven (using cocotb) HDL development in both VHDL and Verilog.
 
 Directory structure:
