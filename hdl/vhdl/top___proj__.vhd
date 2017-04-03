@@ -1,14 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity top__proj__ is
+entity top___proj__ is
   -- Port declarations
   -- port (
     -- p_i_NAME: in|inout|out std_logic|std_logic_vector();
   -- );
-end top__proj__;
+end top___proj__;
 
-architecture arch_top__proj__ of top__proj__ is
+architecture arch_top___proj__ of top___proj__ is
 
   -- Submodule instantiation
   -- component submodule_name
@@ -30,5 +30,5 @@ begin
       -- p_i_SUB_NAME => port|signal,
     -- );
 
-end arch_top__proj__;
+end arch_top___proj__;
 

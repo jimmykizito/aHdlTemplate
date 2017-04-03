@@ -1,7 +1,7 @@
 // Timescale declaration necessary for simulation.
 `timescale 1ns/1ns
 
-module top__proj__ (
+module top___proj__ (
     // Port declarations
     // input|inout|output p_i|io|o_NAME,
   );
@@ -18,10 +18,10 @@ module top__proj__ (
 
   // Wave dump
   initial begin
-    $dumpfile("waves__proj__.vcd");
+    $dumpfile("waves___proj__.vcd");
     // $dumpvars(<level>, <module>);
     // level: 0 >> all, 1 >> top only, 2 >> up to 1 level down
-    $dumpvars(0, top__proj__);
+    $dumpvars(0, top___proj__);
   end
 
 endmodule

@@ -4,7 +4,7 @@ from cocotb.triggers import Timer, RisingEdge
 from cocotb.result import TestFailure, TestSuccess
 
 @cocotb.test()
-def test__proj__(dut):
+def test___proj__(dut):
     """
     <Test description>
     """

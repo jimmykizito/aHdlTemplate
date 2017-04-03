@@ -1,4 +1,4 @@
-TOPLEVEL_LANG = verilog
+TOPLEVEL_LANG=verilog
 
 SIM?=icarus
 
@@ -7,12 +7,12 @@ COCOTB?=/usr/local/src/cocotb.git
 PYTHONPATH:=$(PWD)/../:$(PYTHONPATH)
 
 # Top level source
-VERILOG_SOURCES=$(PWD)/../../hdl/verilog/top__proj__.v
+VERILOG_SOURCES=$(PWD)/../../hdl/verilog/top___proj__.v
 # Submodule sources
 #VERILOG_SOURCES+=$(PWD)/../../hdl/verilog/<submodule>.v
-TOPLEVEL=top__proj__
+TOPLEVEL=top___proj__
 
-MODULE=test__proj__
+MODULE=test___proj__
 
 include $(COCOTB)/makefiles/Makefile.inc
 include $(COCOTB)/makefiles/Makefile.sim
