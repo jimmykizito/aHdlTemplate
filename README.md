@@ -1,5 +1,5 @@
-# HDL Project Template
---------------------
+HDL Project Template
+====================
 
 Version 1.0
 
@@ -34,13 +34,26 @@ Directory structure:
 │   └── vhdl
 └── tools
 
-Usage
------
-- git clone
-- delete .git
+Initialisation
+--------------
+- git clone <url> <local_dir>
+- run tools/init_py <proj name> -d <local_dir>
 - git init
 - git remote add origin <url>
 - git add .. commit ..
 - git push -u origin --all
 - Replace this README with something project relevant
+
+Usage
+-----
+- cd test/<verilog|vhdl>
+- make clean
+- make test
+- gtkwave [sim_build/]waves_tut_sync_logic.vcd
+
+Dependencies
+------------
+- icarus
+- ghdl
+- gtkwave
 
