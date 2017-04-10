@@ -1,7 +1,8 @@
 // Timescale declaration necessary for simulation.
 `timescale 1ns/1ns
 
-module top___proj__ (
+module top___proj__
+  (
     // Port declarations
     // input|inout|output p_i|io|o_NAME,
   );
@@ -9,7 +10,7 @@ module top___proj__ (
   // Submodule instantiation
   // submodule_name
     // parameters
-    // # (
+    // #(
       // .g_PARAM(VALUE)
     //)
     // i_submodule_name (
