@@ -48,7 +48,7 @@ Usage
 -----
 - cd test/<verilog|vhdl>
 - make clean
-- make test
+- make
 - gtkwave [sim_build/]waves_tut_sync_logic.vcd
 
 Dependencies
