@@ -1,7 +1,13 @@
 // Timescale declaration necessary for simulation.
 `timescale 1ns/1ns
 
+/*!
+ * Module description.
+ */
 module top___proj__
+  // #(
+    // parameter g_PARAM = DEFAULT_VALUE,
+  // )
   (
     // Port declarations
     // input|inout|output p_i|io|o_NAME,

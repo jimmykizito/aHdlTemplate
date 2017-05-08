@@ -1,7 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+--! Module description.
 entity top___proj__ is
+  -- generic (
+    -- g_PARAM: type := DEFAULT_VALUE;
+  -- );
   -- Port declarations
   -- port (
     -- p_i_NAME: in|inout|out std_logic|std_logic_vector();
