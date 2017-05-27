@@ -1,7 +1,7 @@
 TOPLEVEL_LANG=vhdl
 
 SIM?=ghdl
-SIM_ARGS?="--vcd=waves__proj__.vcd"
+SIM_ARGS?="--vcd=waves___proj__.vcd"
 
 PWD=$(shell pwd)
 COCOTB?=/usr/local/src/cocotb.git
