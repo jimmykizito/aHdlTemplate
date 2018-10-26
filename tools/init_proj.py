@@ -8,7 +8,7 @@ import os
 import shutil
 import sys
 
-# TODO: Refactor to use InitProj class.
+# TODO: Refactor to use ProjMgmt class.
 
 def init_proj_fmt_name(proj_arg):
     """
@@ -60,15 +60,17 @@ if __name__ == '__main__':
     print 'Project directory (%s) derived from project name (%s).' \
         % (proj_dir, proj_name)
 
+    # TODO: Rather search project directory (to max depth ~3) for files with
+    #       template marker "__proj__".
     # Initialise project files.
     # Constant list of prject files to modify.
     # Each row it the path of the file relative to the project root directory.
     PROJ_FILES = [
         ['hdl', 'verilog', 'top___proj__.v'],
         ['hdl', 'vhdl', 'top___proj__.vhd'],
-        ['test', 'test___proj__.py'],
-        ['test', 'verilog', 'Makefile'],
-        ['test', 'vhdl', 'Makefile']
+        ['tests', 'test___proj__.py'],
+        ['tests', 'verilog', 'Makefile'],
+        ['tests', 'vhdl', 'Makefile']
     ]
     PROJ_NAME_DEFAULT = '__proj__'
 
