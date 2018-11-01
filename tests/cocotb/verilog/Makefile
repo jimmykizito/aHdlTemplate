@@ -9,7 +9,7 @@ PYTHONPATH:=$(PWD)/../:$(PYTHONPATH)
 # Top level source
 VERILOG_SOURCES=$(PWD)/../../../hdl/verilog/top___proj__.v
 # Submodule sources
-#VERILOG_SOURCES+=$(PWD)/../../../hdl/verilog/<submodule>.v
+VERILOG_SOURCES+=$(PWD)/../../../hdl/verilog/dff.v
 TOPLEVEL=top___proj__
 
 MODULE=test___proj__

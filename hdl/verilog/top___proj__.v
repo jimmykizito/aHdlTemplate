@@ -9,19 +9,25 @@ module top___proj__
     // parameter _PARAM = DEFAULT_VALUE,
   // )
   (
-    // Port declarations
     // input|inout|output i|io|o_port_name,
+    input i_clk,
+    input i_reset,
+    input i_d,
+    output o_q
   );
 
   // Submodule instantiation
-  // submodule_name
-    // parameters
+  dff
     // #(
       // ._PARAM(VALUE),
-    //)
-    // u_submodule_name (
+    // )
+    u_dff (
       // .i|io|o_port_name(signal|port),
-    // );
+      .i_clk(i_clk),
+      .i_reset(i_reset),
+      .i_d(i_d),
+      .o_q(o_q)
+    );
 
   // Wave dump
   initial begin

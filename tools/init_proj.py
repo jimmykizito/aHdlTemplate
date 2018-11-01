@@ -60,6 +60,8 @@ if __name__ == '__main__':
     print 'Project directory (%s) derived from project name (%s).' \
         % (proj_dir, proj_name)
 
+# rename 's/hdl_bits/__proj__/g' *.py
+
     # TODO: Rather search project directory (to max depth ~3) for files with
     #       template marker "__proj__".
     # Initialise project files.
