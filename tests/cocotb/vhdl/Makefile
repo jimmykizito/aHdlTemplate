@@ -1,15 +1,16 @@
-TOPLEVEL_LANG=verilog
+TOPLEVEL_LANG=vhdl
 
-SIM?=icarus
+SIM?=ghdl
+SIM_ARGS?="--vcd=waves___proj__.vcd"
 
 PWD=$(shell pwd)
 COCOTB?=/usr/local/src/cocotb.git
 PYTHONPATH:=$(PWD)/../:$(PYTHONPATH)
 
-# Top level source
-VERILOG_SOURCES=$(PWD)/../../hdl/verilog/top___proj__.v
+# Top-level source
+VHDL_SOURCES=$(PWD)/../../../hdl/vhdl/top___proj__.vhd
 # Submodule sources
-#VERILOG_SOURCES+=$(PWD)/../../hdl/verilog/<submodule>.v
+#VHDL_SOURCES+=$(PWD)/../../../hdl/vhdl/<submodule>.vhd
 TOPLEVEL=top___proj__
 
 MODULE=test___proj__

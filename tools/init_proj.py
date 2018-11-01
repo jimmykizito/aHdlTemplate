@@ -68,9 +68,9 @@ if __name__ == '__main__':
     PROJ_FILES = [
         ['hdl', 'verilog', 'top___proj__.v'],
         ['hdl', 'vhdl', 'top___proj__.vhd'],
-        ['tests', 'test___proj__.py'],
-        ['tests', 'verilog', 'Makefile'],
-        ['tests', 'vhdl', 'Makefile']
+        ['tests', 'cocotb', 'test___proj__.py'],
+        ['tests', 'cocotb', 'verilog', 'Makefile'],
+        ['tests', 'cocotb', 'vhdl', 'Makefile']
     ]
     PROJ_NAME_DEFAULT = '__proj__'
 
