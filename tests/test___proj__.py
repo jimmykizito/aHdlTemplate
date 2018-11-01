@@ -11,4 +11,3 @@ def test___proj__(dut):
     dut._log.info("Test beginning.")
 
     dut._log.info("Test ending.")
-

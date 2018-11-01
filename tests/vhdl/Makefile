@@ -17,4 +17,3 @@ MODULE=test___proj__
 
 include $(COCOTB)/makefiles/Makefile.inc
 include $(COCOTB)/makefiles/Makefile.sim
-

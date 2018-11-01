@@ -98,4 +98,3 @@ if __name__ == '__main__':
         % (proj_dir_old, proj_dir_new)
     #Python 3 ? os.renames(proj_dir_old, proj_dir_new)
     shutil.move(proj_dir_old, proj_dir_new)
-
