@@ -4,34 +4,34 @@ use ieee.std_logic_1164.all;
 --! Module description.
 entity top___proj__ is
   -- generic (
-    -- g_PARAM: type := DEFAULT_VALUE;
+    -- _PARAM: type := DEFAULT_VALUE;
   -- );
   -- Port declarations
   -- port (
-    -- p_i_NAME: in|inout|out std_logic|std_logic_vector();
+    -- i|io|o_port_name: in|inout|out type;
   -- );
-end top___proj__;
+end entity top___proj__;
 
-architecture arch_top___proj__ of top___proj__ is
+architecture rtl of top___proj__ is
 
   -- Submodule instantiation
   -- component submodule_name
     -- generic (
-      -- g_PARAM: type := DEFAULT_VALUE
+      -- _PARAM: type := DEFAULT_VALUE;
     -- );
     -- port (
-      -- p_i_SUB_NAME: in|inout|out type;
+      -- i|io|o_port_name: in|inout|out type;
     -- );
   -- end component;
 
 begin
 
-  -- i_submodule_name: submodule_name
+  -- u_submodule_name: submodule_name
     -- generic map (
-      -- g_PARAM => VALUE
+      -- _PARAM => VALUE,
     -- )
     -- port map (
-      -- p_i_SUB_NAME => port|signal,
+      -- i|io|o_port_name => port|signal,
     -- );
 
-end arch_top___proj__;
+end architecture rtl;

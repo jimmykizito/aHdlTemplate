@@ -1,4 +1,4 @@
-// Timescale declaration necessary for simulation.
+`default_nettype none
 `timescale 1ns/1ns
 
 /*!
@@ -6,21 +6,21 @@
  */
 module top___proj__
   // #(
-    // parameter g_PARAM = DEFAULT_VALUE,
+    // parameter _PARAM = DEFAULT_VALUE,
   // )
   (
     // Port declarations
-    // input|inout|output p_i|io|o_NAME,
+    // input|inout|output i|io|o_port_name,
   );
 
   // Submodule instantiation
   // submodule_name
     // parameters
     // #(
-      // .g_PARAM(VALUE)
+      // ._PARAM(VALUE),
     //)
-    // i_submodule_name (
-      // .p_i|io|o_SUB_NAME(signal|port),
+    // u_submodule_name (
+      // .i|io|o_port_name(signal|port),
     // );
 
   // Wave dump
