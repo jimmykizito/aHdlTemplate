@@ -1,18 +1,17 @@
-TOPLEVEL_LANG=verilog
+TOPLEVEL_LANG = verilog
 
-SIM?=icarus
+SIM ?= icarus
 
-PWD=$(shell pwd)
-COCOTB?=/usr/local/src/cocotb.git
-PYTHONPATH:=$(PWD)/../:$(PYTHONPATH)
+PWD = $(shell pwd)
+COCOTB ?= /usr/local/src/cocotb.git
+export PYTHONPATH := $(PWD)/../:$(PYTHONPATH)
 
 # Top level source
-VERILOG_SOURCES=$(PWD)/../../../hdl/verilog/top___proj__.v
+VERILOG_SOURCES = $(PWD)/../../../hdl/verilog/top___proj__.v
 # Submodule sources
-VERILOG_SOURCES+=$(PWD)/../../../hdl/verilog/dff.v
-TOPLEVEL=top___proj__
+VERILOG_SOURCES += $(PWD)/../../../hdl/verilog/dff.v
+TOPLEVEL = top___proj__
 
-MODULE=test___proj__
+MODULE = test___proj__
 
-include $(COCOTB)/makefiles/Makefile.inc
-include $(COCOTB)/makefiles/Makefile.sim
+include $(shell cocotb-config --makefiles)/Makefile.sim

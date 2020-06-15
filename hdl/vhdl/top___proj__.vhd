@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 --! Module description.
 entity top___proj__ is
   -- generic (
-    -- _PARAM: type := DEFAULT_VALUE;
+    -- PARAM: type := DEFAULT_VALUE;
   -- );
   port (
     -- i|io|o_port_name: in|inout|out type;
@@ -29,7 +29,7 @@ architecture rtl of top___proj__ is
       i_d: in std_logic;
       o_q: out std_logic
     );
-  end component;
+  end component dff;
 
 begin
 
